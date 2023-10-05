@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;lib&apos;&#x0D;&#x0A;- Original project: &apos;despensa&apos;&#x0D;&#x0A;- Destination element: &apos;lib&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     mail-1.4.7.jar&#x0D;&#x0A;     sqljdbc42.jar&#x0D;&#x0A;     jaxb-api-2.4.0-b180830.0359.jar&#x0D;&#x0A;     jstl-1.2.jar&#x0D;&#x0A;     urlrewritefilter-4.0.3.jar" description="Copy files" element1="src/main/webapp/WEB-INF/lib/mail-1.4.7.jar" element2="src/main/webapp/WEB-INF/lib/sqljdbc42.jar" element3="src/main/webapp/WEB-INF/lib/jaxb-api-2.4.0-b180830.0359.jar" element4="src/main/webapp/WEB-INF/lib/jstl-1.2.jar" element5="src/main/webapp/WEB-INF/lib/urlrewritefilter-4.0.3.jar" files="5" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1696462573671" target="/agenda/src/main/webapp/WEB-INF/lib" units="0" version="1.0"/>
+</session>

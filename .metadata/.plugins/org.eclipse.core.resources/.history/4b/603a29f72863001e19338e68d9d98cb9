@@ -1,0 +1,73 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.ArrayList;
+
+public class DAO {
+	
+	/*Modulo de Conexão */
+	
+	//Parametros de conexão
+		
+	private String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+	private String url ="jdbc:sqlserver://localhost:1433;databaseName=agenda";
+	private String user = "sa";
+	private String password = "1234";
+	
+	//Método de conexão
+
+	private Connection conectar() {
+		Connection con = null;
+		try {
+			Class.forName(driver);
+			con = DriverManager.getConnection(url, user, password);
+			return con;
+		} catch (Exception e) {
+			System.out.println(e);
+			return null;
+		}
+	}
+	
+	//Crud Create
+	public void inserirContato(JavaBeans contato) {
+		String create = "insert into contatos (nome,fone,email) values (?,?,?)";
+		try {
+			//abrir conexao			
+			Connection con = conectar();
+			
+			//preparar a query para execução no banco de Dados
+			PreparedStatement pst = con.prepareStatement(create);
+			
+			//Substituit os parametros (?) pelo conteudo das variaveis JavaBeans
+			pst.setString(1, contato.getNome());
+			pst.setString(2, contato.getFone());
+			pst.setString(3, contato.getEmail());
+			
+			//executar Query
+			pst.executeUpdate();
+			
+			//Encerrar a conexao com o banco
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+	
+	//Crud Read
+	public ArrayList<JavaBeans> listarContatos(){
+		
+	}
+}
+
+//teste de conexão
+//public void testeConexao() {
+//	try {
+//		Connection con = conectar();
+//		System.out.println(con);
+//		con.close();
+//	} catch (Exception e) {
+//		System.out.println(e);
+//	}
+//}

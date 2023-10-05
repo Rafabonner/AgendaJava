@@ -1,0 +1,46 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DAO {
+	
+	/*Modulo de Conexão */
+	
+	//Parametros de conexão
+		
+	private String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+	private String url ="jdbc:sqlserver://localhost:1433;databaseName=agenda";
+	private String user = "sa";
+	private String password = "1234";
+	
+	//Método de conexão
+
+	private Connection conectar() {
+		Connection con = null;
+		try {
+			Class.forName(driver);
+			con = DriverManager.getConnection(url, user, password);
+			return con;
+		} catch (Exception e) {
+			System.out.println(e);
+			return null;
+		}
+	}
+	
+	//Crud Create
+	public void inserirContato(JavaBeans contato) {
+		String create = "insert into contatos (nome,fone,email) values (?,?,?)";
+	}
+}
+
+//teste de conexão
+//public void testeConexao() {
+//	try {
+//		Connection con = conectar();
+//		System.out.println(con);
+//		con.close();
+//	} catch (Exception e) {
+//		System.out.println(e);
+//	}
+//}

@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body{
+    font-family: arial;
+    background: linear-gradient(to right, #cce2e4, #93c2c4, #48a3a7);
+
+    
+}
+
+input[type="button"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #08558B;
+    cursor: pointer;/* para aparecer a maozinha de que e um botão */
+}
+
+input[type="button"]:hover {
+    background-color: #1b223c;
+    transition: .5s;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 400px
+}
+
+.box{
+    background-color: #fff;
+    /*Novamente definimos a largura da div*/
+    width:700px;
+    /* altura da div */
+    height:150px;
+    /* O atributo Float é utilizado para fazermos o nosso bloco(div)
+    literalmente flutue e se posicione onde queremos na página,
+    quando escolhemos left, dizemos que esse bloco irá se posicionar na
+    parte esquerda da página */
+    float:left;
+    /* Cor de fundo da div */
+    /*background-color: rgba(255, 255, 255, 0.61);*/
+    margin-left: 50px;
+    border-radius: 30px;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 25px  rgba(50, 50, 50, 0.336);
+    -moz-box-shadow: 5px 5px 25px   rgba(50, 50, 50, 0.336);
+    box-shadow: 5px 5px 25px   rgba(50, 50, 50, 0.336); 
+    }  

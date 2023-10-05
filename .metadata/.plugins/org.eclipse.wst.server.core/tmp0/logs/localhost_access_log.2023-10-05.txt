@@ -1,0 +1,12 @@
+0:0:0:0:0:0:0:1 - - [05/Oct/2023:00:13:31 -0300] "GET /agenda/main HTTP/1.1" 200 457
+0:0:0:0:0:0:0:1 - - [05/Oct/2023:00:22:39 -0300] "GET /agenda/main HTTP/1.1" 200 1002
+0:0:0:0:0:0:0:1 - - [05/Oct/2023:00:24:07 -0300] "GET /agenda/novo.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Oct/2023:00:24:07 -0300] "GET /agenda/scripts/validador.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Oct/2023:00:24:30 -0300] "GET /agenda/insert?nome=Cleiton&fone=21312312312&email=cleiton%40email.com HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [05/Oct/2023:00:24:30 -0300] "GET /agenda/main HTTP/1.1" 200 1122
+0:0:0:0:0:0:0:1 - - [05/Oct/2023:00:24:35 -0300] "GET /agenda/main HTTP/1.1" 200 1122
+0:0:0:0:0:0:0:1 - - [05/Oct/2023:00:26:27 -0300] "GET /agenda/main HTTP/1.1" 200 970
+127.0.0.1 - - [05/Oct/2023:00:31:29 -0300] "GET / HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [05/Oct/2023:00:31:33 -0300] "GET /agenda/main HTTP/1.1" 200 970
+0:0:0:0:0:0:0:1 - - [05/Oct/2023:00:32:00 -0300] "GET /agenda/insert?nome=Elizete+&fone=958800050&email=elg%40email.com HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [05/Oct/2023:00:32:00 -0300] "GET /agenda/main HTTP/1.1" 200 1085
